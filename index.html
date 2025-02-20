@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido - Página Principal</title>
+    <!-- Enlace a Bootstrap local -->
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/CSSindex.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="bg-primary text-white p-4 text-center">
+        <h1>Bienvenidos a Nuestro Sitio Web</h1>
+        <p>Explora nuestros servicios y productos</p>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Tarjeta 1 con clases personalizadas -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="producto1.png" class="card-img-top" alt="Imagen 1">
+                    <div class="card-body">
+                        <h5 class="product-card-title">Producto o Servicio 1</h5>
+                        <p class="card-text">Descripción breve de lo que ofrecemos en esta categoría.</p>
+                        <p class="product-price">$50.00</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 con clases personalizadas -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="producto2.png" class="card-img-top" alt="Imagen 2">
+                    <div class="card-body">
+                        <h5 class="product-card-title">Producto o Servicio 2</h5>
+                        <p class="card-text">Otra descripción de nuestros productos o servicios.</p>
+                        <p class="product-price">$75.00</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 con clases personalizadas -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="producto3.png" class="card-img-top" alt="Imagen 3">
+                    <div class="card-body">
+                        <h5 class="product-card-title">Producto o Servicio 3</h5>
+                        <p class="card-text">Breve información sobre otro producto o servicio que ofrecemos.</p>
+                        <p class="product-price">$100.00</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-5">
+            <h2 class="text-center">Contáctanos</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
