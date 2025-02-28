@@ -9,84 +9,84 @@
     <title>lista de productos</title>
 </head>
 <body>
-   <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Tienda Online</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Carrito</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contactos</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    
-    <section>
-        <h1>Lista de productos</h1>
-    </section>
-    <!--Boton para agregar productos-->
-    <div class="d-flex justify-content-between align-items-center mb-3">
-        <button type="submit" class="btn btn-secondary ms-3 mt-2" onclick="window.location.href='crear_producto.html'">Agregar</button>
-    </div>
-
-     <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Cantidad</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Marca</th>
-            <th scope="col">Opciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@dfasdf</td>
-            <td>
-                <button class="btn btn-primary" onclick="window.location.href='editar_producto.html'">Editar</button>
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</button>
-                <button class="btn btn-secondary" onclick="window.location.href='ver_producto.html'">Detalle</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Eliminar</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <p>¿Está seguro de eliminar el producto?</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-danger">Eliminar</button>
-        </div>
-        </div>
-    </div>
-    </div>
-      
-</body>
+    <!-- Barra de navegación -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <a class="navbar-brand" href="#">Tienda Online</a>
+         <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav ml-auto">
+                 <li class="nav-item active">
+                     <a class="nav-link" href="#">Inicio</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="#">Productos</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="#">Carrito</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="#">Contactos</a>
+                 </li>
+             </ul>
+         </div>
+     </nav>
+ 
+     <section class="titulo-lista d-flex justify-content-between  align-items-center">
+         <h2>Lista de productos</h2>
+         <form class="d-flex">
+             <input class="form-control form-control-sm me-3" type="search" placeholder="Buscar" aria-label="Buscar">
+             <button class="btn btn-primary btn-sm me-3" type="submit">Buscar</button>
+         </form>
+         <button type="submit" class="btn btn-secondary me-3" onclick="window.location.href='crear_producto.html'">Agregar</button>
+     </section>
+     <!--Boton para agregar productos-->
+     
+ 
+      <table class="table">
+         <thead>
+           <tr>
+             <th scope="col">#</th>
+             <th scope="col">Nombre</th>
+             <th scope="col">Cantidad</th>
+             <th scope="col">Precio</th>
+             <th scope="col">Marca</th>
+             <th scope="col">Opciones</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <th scope="row">1</th>
+             <td>Mark</td>
+             <td>Otto</td>
+             <td>@mdo</td>
+             <td>@dfasdf</td>
+             <td>
+                 <button class="btn btn-primary" onclick="window.location.href='editar_producto.html'">Editar</button>
+                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</button>
+                 <button class="btn btn-secondary" onclick="window.location.href='ver_producto.html'">Detalle</button>
+             </td>
+           </tr>
+         </tbody>
+       </table>
+       
+ 
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+         <div class="modal-content">
+         <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLabel">Eliminar</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+             <p>¿Está seguro de eliminar el producto?</p>
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+             <button type="button" class="btn btn-danger">Eliminar</button>
+         </div>
+         </div>
+     </div>
+     </div>
+       
+ </body>
 </html>
